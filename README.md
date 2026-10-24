@@ -1,4 +1,4 @@
-# Carbon-Aware Container Scheduler
+# Carbon Aware Container Scheduler
 
 A container scheduling system that incorporates carbon intensity and forecast information into workload execution decisions.
 
