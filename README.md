@@ -27,9 +27,3 @@ This project explores how carbon-aware scheduling can reduce estimated operation
 - Carbon Aware SDK
 - Prometheus
 - Grafana
-
-## Project Status
-
-Initial development: Project setup.
-
-Features and evaluation results will be documented as they are implemented and tested.
