@@ -12,25 +12,27 @@ Define a validated workload representation for the scheduler
 
 ## 0.3 - Baseline Scheduling Engine
 
+## 0.4 — Docker-Based Workload Execution
+
 ### Objective
-Implement a deterministic baseline scheduler for pending workloads
+Execute scheduled workloads in isolated, resource-limited containers
 
 ### Implemented
-- FIFO workload queue
-- Duplicate queued-workload protection
-- Queue inspection and removal operations
-- Scheduling based on FIFO ordering
-- Earliest-start-time enforcement
-- Deadline feasibility checks
-- Deterministic scheduling using an injected timestamp
-- Unit tests for queue and scheduler behavior
+- Docker SDK integration
+- Structured execution results
+- CPU and memory limits
+- Container execution and exit-code handling
+- Standard output and error log collection
+- Basic container security restrictions
+- Container cleanup after execution
+- Mock-based unit tests
+- Manual Docker smoke test
 
 ### Current Limitations
-- Workloads are stored in memory
-- Workload execution is not implemented
-- Rejected workloads are not yet tracked in a persistent lifecycle
-- Carbon intensity does not influence scheduling decisions
-- The scheduler processes one workload per scheduling call
+- Workload scheduling and execution are not yet connected by a persistent orchestration loop
+- Only a single configured container image is supported
+- The CPU benchmark does not measure actual electricity consumption
+- Execution targets are not yet separated by region
 
-### Next
-Implement workload execution using Docker
+### Next 
+Implement carbon-data provider interface
