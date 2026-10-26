@@ -10,23 +10,31 @@
 
 ## 0.5 — Carbon Data Provider Interface
 
+## 0.6 — Historical Carbon Data Integration
+
 ### Objective
-Establish a provider-independent interface for carbon-intensity data
+
+Load and query historical carbon-intensity observations from CSV
 
 ### Implemented
-- Immutable carbon-intensity data model
-- Carbon data provider interface
-- Deterministic synthetic carbon-intensity provider
-- Support for India, France, and Germany
-- Timestamp and intensity validation
-- Unit tests for provider behavior
+
+* Historical CSV provider
+* Required-column validation
+* Region validation
+* Timezone normalization to UTC
+* Non-negative intensity validation through the carbon data model
+* Duplicate observation detection
+* Exact timestamp lookup
+* Missing-observation error handling
+* Test fixtures for India, France, and Germany
 
 ### Current Limitations
-- Synthetic data doesn't represent actual grid conditions
-- Historical data ingestion is not implemented
-- Live API integration is not implemented
-- Forecast-based scheduling is not implemented
-- The scheduling engine does not yet consume carbon-intensity data
 
-### Next Milestone
-Implement historical carbon data ingestion and check live data integration
+* No verified real-world historical dataset is added yet
+* Lookup requires an exact timestamp match
+* Forecast retrieval is not implemented
+* The scheduling engine does not yet consume carbon data
+
+### Next
+
+Verify suitable external carbon data sources and integrate the chosen live or historical data provider

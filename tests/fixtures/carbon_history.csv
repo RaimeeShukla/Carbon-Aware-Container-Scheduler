@@ -1,0 +1,7 @@
+region,timestamp,intensity_gco2_per_kwh,source
+india,2026-10-26T10:00:00Z,650.0,test_fixture
+india,2026-10-26T11:00:00Z,620.0,test_fixture
+france,2026-10-26T10:00:00Z,85.0,test_fixture
+france,2026-10-26T11:00:00Z,80.0,test_fixture
+germany,2026-10-26T10:00:00Z,320.0,test_fixture
+germany,2026-10-26T11:00:00Z,300.0,test_fixture
