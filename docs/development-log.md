@@ -2,37 +2,31 @@
 
 ## 0.1 - Project Initialization
 
-### Objective
-To create a clean, reproducible project structure
-
 ## 0.2 - Workload Model and Validation
-
-### Objective
-Define a validated workload representation for the scheduler
 
 ## 0.3 - Baseline Scheduling Engine
 
 ## 0.4 — Docker-Based Workload Execution
 
+## 0.5 — Carbon Data Provider Interface
+
 ### Objective
-Execute scheduled workloads in isolated, resource-limited containers
+Establish a provider-independent interface for carbon-intensity data
 
 ### Implemented
-- Docker SDK integration
-- Structured execution results
-- CPU and memory limits
-- Container execution and exit-code handling
-- Standard output and error log collection
-- Basic container security restrictions
-- Container cleanup after execution
-- Mock-based unit tests
-- Manual Docker smoke test
+- Immutable carbon-intensity data model
+- Carbon data provider interface
+- Deterministic synthetic carbon-intensity provider
+- Support for India, France, and Germany
+- Timestamp and intensity validation
+- Unit tests for provider behavior
 
 ### Current Limitations
-- Workload scheduling and execution are not yet connected by a persistent orchestration loop
-- Only a single configured container image is supported
-- The CPU benchmark does not measure actual electricity consumption
-- Execution targets are not yet separated by region
+- Synthetic data doesn't represent actual grid conditions
+- Historical data ingestion is not implemented
+- Live API integration is not implemented
+- Forecast-based scheduling is not implemented
+- The scheduling engine does not yet consume carbon-intensity data
 
-### Next 
-Implement carbon-data provider interface
+### Next Milestone
+Implement historical carbon data ingestion and check live data integration
